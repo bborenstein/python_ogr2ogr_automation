@@ -9,7 +9,6 @@ t1 = Timeloop()
 @t1.job(interval=timedelta(seconds=2))
 def load_features():    
     # import the data
-    print('Attempting to import historic GeoJSON file into PostGIS Table at : {}'.format(time.ctime()))
     try:
             def load(args):
                     options = ['ogr2ogr']
