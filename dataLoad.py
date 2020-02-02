@@ -6,7 +6,7 @@ import time
 
 t1 = Timeloop()
 
-@t1.job(interval=timedelta(seconds=2))
+@t1.job(interval=timedelta(seconds=15))
 def load_features():    
     # import the data
     try:
